@@ -1,0 +1,16 @@
+import { Note } from "@/src/lib/api";
+
+type Props = {
+  item: Note;
+};
+
+const NoteItem = ({ item }: Props) => {
+  return (
+    <li>
+      <p>{item.title}</p>
+    </li>
+  );
+}
+
+export default NoteItem;
+
